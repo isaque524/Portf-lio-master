@@ -1,3 +1,26 @@
+function sendMail() {
+    var params = {
+        nome: document.getElementById("nome").value,
+        email: document.getElementById("email").value,
+        menssagem: document.getElementById("menssagem").value,
+    };
+
+    const serviceID = "service_627lz9k";
+    const templateID = "template_da259om";
+
+    emailjs.send(serviceID, templateID, params)
+        .then(res => {
+            document.getElementById("nome").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("menssagem").value = "";
+            console.log(res);
+            alert("Your message sent successfully!!")
+
+        })
+        .catch(err => console.log(err));
+
+}
+
 /*Logica do menu para telas mobile*/
 
 const menuMobile = document.querySelector('.menu-mobile')
@@ -57,9 +80,3 @@ btnEnviar.addEventListener("click", () => {
 
 })
 
-//time do alerta 
-
-
-setTimeout(() => {
-    document.querySelector('#alerta').style.display = 'none';
-}, 5000)
