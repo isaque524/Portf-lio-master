@@ -1,18 +1,18 @@
 function sendMail() {
     var params = {
-        nome: document.getElementById("nome").value,
+        name: document.getElementById("name").value,
         email: document.getElementById("email").value,
-        menssagem: document.getElementById("menssagem").value,
+        message: document.getElementById("message").value,
     };
 
-    const serviceID = "service_13z77nf";
-    const templateID = "template_da259om";
+    const serviceID = "service_kxyw52u";
+    const templateID = "template_dx71rnt";
 
     emailjs.send(serviceID, templateID, params)
         .then(res => {
-            document.getElementById("nome").value = "";
+            document.getElementById("name").value = "";
             document.getElementById("email").value = "";
-            document.getElementById("menssagem").value = "";
+            document.getElementById("message").value = "";
             console.log(res);
             alert("Your message sent successfully!!")
 

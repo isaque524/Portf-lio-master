@@ -14,7 +14,7 @@
     </script>
     <script type="text/javascript">
         (function () {
-            emailjs.init("FVt4gBbg93ec9bdG7");
+            emailjs.init("Z0x_96tUAd-dtOVah");
         })();
     </script>
 </head>
@@ -519,7 +519,7 @@
                             </div>
 
                             <div class="email">
-                                <h4><a target="_blank" href="./app.html"><i class="bi bi-envelope"></i>Email:</h4></a>
+                                <h4><i class="bi bi-envelope"></i>Email:</h4>
                                 <p>isaquesilvadamasceno@gmail.com</p>
                             </div>
 
@@ -532,9 +532,27 @@
                         </div>
 
                     </div>
-                </div>
 
-            </div>
+                    <div class="col-md-7 mt-5 mt-md-0">
+                        <div class="card p-5 h-100 shadow border-0" data-anime="left">
+                            <h1>Envie um email</h1>
+                            <div class="form-group">
+                                <h5 for="name">Nome</h5>
+                                <input type="text" class="form-control" id="name" placeholder="Digite seu nome" />
+                            </div>
+
+                            <div class="form-group">
+                                <h5 for="email">Email</h5>
+                                <input type="email" class="form-control" id="email" placeholder="Digite seu email" />
+                            </div>
+
+                            <div class="form-group">
+                                <h5 for="message">Menssagem</h5>
+                                <textarea class="form-control" id="message" rows="6"></textarea>
+                            </div>
+
+                            <button class="btn btn-primary" onclick="sendMail()">Enviar
+                        </div>
         </section>
 
     </main>
@@ -556,7 +574,5 @@
 
 <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="./index.js"></script>
-
-
 
 </html>
