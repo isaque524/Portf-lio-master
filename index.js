@@ -5,7 +5,7 @@ function sendMail() {
         menssagem: document.getElementById("menssagem").value,
     };
 
-    const serviceID = "service_hl7rye7";
+    const serviceID = "service_13z77nf";
     const templateID = "template_da259om";
 
     emailjs.send(serviceID, templateID, params)
@@ -69,14 +69,4 @@ window.addEventListener("scroll", () => {
     animeScroll();
 })
 
-/*ativação dos botoes d envio*/
-
-const btnEnviar = document.querySelector('#btn-enviar')
-const btnEnviando = document.querySelector('#btn-enviando')
-
-btnEnviar.addEventListener("click", () => {
-    btnEnviando.style.display = "block";
-    btnEnviar.style.display = 'none'
-
-})
 
