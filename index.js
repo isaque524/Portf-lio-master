@@ -14,7 +14,7 @@ function sendMail() {
             document.getElementById("email").value = "";
             document.getElementById("message").value = "";
             console.log(res);
-            alert("Your message sent successfully!!")
+            alert("Email enviado com sucesso!!")
 
         })
         .catch(err => console.log(err));
